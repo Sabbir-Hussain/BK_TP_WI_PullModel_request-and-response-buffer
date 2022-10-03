@@ -1,0 +1,38 @@
+Request Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+   <systemInfo>
+      <userName>Bkash</userName>
+      <password>Bkash123!</password>
+      <timestamp>2020-05-01 00:00:00</timestamp>
+   </systemInfo>
+   <recipientInfo>
+      <msisdn>+8801823073064</msisdn>
+      <idDocument>
+         <idNumber>1823073064</idNumber>
+ 		 <idType>01</idType>
+         <issueDate>23122006</issueDate>
+         <expiryDate>23122045</expiryDate>
+      </idDocument>
+   </recipientInfo>
+ <channelCode>01</channelCode>
+ <txnReference>w102122</txnReference>
+   <thirdPPInfo>
+      <thirdPPName>WU</thirdPPName>
+      <additionalInfo>
+         <info key="agentMsisdn" value="01987554322"/>
+         <info key="key2" value="val2" />
+         <info key="key3" value="val3" />
+      </additionalInfo>
+   </thirdPPInfo>
+</request>
+
+Response: 
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+    <status>
+        <responseCode>4500</responseCode>
+        <responseMessage>kyc verification successful</responseMessage>
+    </status>
+</response>
